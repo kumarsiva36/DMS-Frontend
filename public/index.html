@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="robots" content="noindex" />
+    <meta
+    name="keyword"
+    content="Digital Merchandising System- the future of merchandising"
+  />
+    <meta
+      name="description"
+      content="Digital Merchandising System- The concept is targeted to the Garments Manufacturing Companies to monitor all the process starts
+      from purchase materials, legal commitments, accessories to attach, cutting process, sewing process,
+      packing process and end of all to delivery to the customer hub."
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- 
+    <script>
+
+      function toggleZoomScreen() {
+        if(window.devicePixelRatio==1.25){
+          document.body.style.zoom = "85%";
+        }else if(window.devicePixelRatio==1.5){
+          document.body.style.zoom = "68%";
+        }
+        else if(window.devicePixelRatio==1.75){
+          document.body.style.zoom = "65%";
+        }
+        else if(window.devicePixelRatio==2){
+          document.body.style.zoom = "60%";
+        } else if(window.devicePixelRatio==1.5){
+          document.body.style.zoom = "68%";
+          document.body.style.MozTransform = "scale(0.8)";
+          document.body.style.MozTransformOrigin = "0 0";
+        }
+      }
+    </script> -->
+
+    <script>
+      function toggleZoomScreen() {
+       // console.log("window.devicePixelRatio==>",window.devicePixelRatio)
+       var isMac = navigator.userAgent.toLowerCase().indexOf('mac') !== -1;
+       var isLinux = navigator.userAgent.toLowerCase().indexOf('linux') !== -1;
+       var isUbuntu = navigator.userAgent.toLowerCase().indexOf('ubuntu') !== -1;
+          if (isUbuntu) {
+        document.body.style.transform = 'scale(1.0)';
+        document.body.style.zoom = "100%";
+          }
+          else if (isLinux) {
+        document.body.style.transform = 'scale(1.0)';
+        document.body.style.zoom = "100%";
+          }
+          else if (isMac) {
+        document.body.style.transform = 'scale(1.0)';
+        document.body.style.zoom = "100%";
+          }
+        else if(window.devicePixelRatio==1.25){
+          document.body.style.zoom = "85%";
+        }else if(window.devicePixelRatio==1.5){
+          document.body.style.zoom = "68%";
+
+          var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+          if (isFirefox) {
+            document.body.style.MozTransform = "scale(0.8)";
+            document.body.style.MozTransformOrigin = "0 0";
+            document.body.style.width = "124.75%";
+          }
+
+        }
+        else if(window.devicePixelRatio==1.75){
+          document.body.style.zoom = "65%";
+        }
+        else if(window.devicePixelRatio==2){
+          document.body.style.zoom = "60%";
+        }else{
+          
+        }
+       // var isSafari = navigator.userAgent.toLowerCase().indexOf('safari') !== -1 && navigator.userAgent.toLowerCase().indexOf('chrome') === -1;
+    
+         
+
+          
+      } 
+   </script>
+
+
+    <title > ITOHEN - DMS </title>
+        <!-- Google font-->
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"> -->
+  </head>
+  <!-- <body> -->
+      <body onload="toggleZoomScreen()">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+   
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
